@@ -1,0 +1,24 @@
+# ATM response 
+print ("You are weelcome dear esteemed customer, kindly input your pin below to proceed!")
+# Made by Design Normad
+# ATM pin simulation
+# i created a function that checks if the pin code, insert by an user, is correct
+
+def atm(pin):
+    while True:                                          # i create an infinite loop
+        user_pin_answer = int(input("insert pin: "))     # i convert in integer value
+        if user_pin_answer == pin:
+            print("OK! Hello User00001 ")
+            break                                        # I get out from the infinite loop
+        else:
+            print("pin wrong, retry")
+# I recall the function and i pass it the secret pin
+atm(2000)
+
+while True:
+     transaction = int(input("1(withdraw), 2(check balance), 3(transfer), 4(paybill):  "))
+     if transaction == "1":
+            int(input("1(savings), 2(current): "))
+            amount = int(input("Enter amount: "))
+            print("take your cash....")
+    
